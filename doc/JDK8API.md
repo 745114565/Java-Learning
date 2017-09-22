@@ -1,5 +1,5 @@
-## JDK 8 API
+# JDK 8 API
 
-* Collection
+## Collection
 
-* Objects
+## Objects

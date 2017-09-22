@@ -1,6 +1,6 @@
 # JDK 8 API
 
-## Collection
+## Collection 类
 
 >   `Collection` 是 `java.util` 包下的的一个接口类，所有实现了该接口的类都将具有它的方法与属性。目前官方实现的有：`Set`，`List`，`Map`等。开发人员可以根据需求自定义几个类并实现它。
 
@@ -110,33 +110,91 @@
    
 ```
 
-``` java 
-/**
+``` java  
+  /**
+   *    Retains only the elements in this collection that are contained in the
+   * specified collection (optional operation).  In other words, removes from
+   * this collection all of its elements that are not contained in the
+   * specified collection.
+   */
+   boolean retainAll(Collection<?> c)
+```
 
-*/
+``` java 
+  /**
+     * Removes all of the elements from this collection (optional operation).
+     * The collection will be empty after this method returns.
+     *
+     * @throws UnsupportedOperationException if the <tt>clear</tt> operation
+     *         is not supported by this collection
+     */
+    void clear();
    
 ```
 
 ``` java 
-/**
-
-*/
    
+    /**
+     * Creates a {@link Spliterator} over the elements in this collection.
+     */
+   @Override
+    default Spliterator<E> spliterator() {
+        return Spliterators.spliterator(this, 0);
+    }
+   
 ```
+[参考文档](http://blog.csdn.net/lh513828570/article/details/56673804)
+
 
 ``` java 
-/**
-
-*/
+    /**
+     * Returns a sequential {@code Stream} with this collection as its source.
+     */
+    default Stream<E> stream() {
+        return StreamSupport.stream(spliterator(), false);
+    }
    
 ```
+[Stream 参考文档](https://www.ibm.com/developerworks/cn/java/j-lo-java8streamapi/ "IBM 之 Java 8 中的 Streams API 详解")
 
 ``` java 
-/**
-
-*/
+    /**
+     * Returns a possibly parallel {@code Stream} with this collection as its
+     * source.  It is allowable for this method to return a sequential stream.
+     * @since 1.8
+     */
+    default Stream<E> parallelStream() {
+        return StreamSupport.stream(spliterator(), true);
+    }
    
 ```
-
 
 ## Objects
+``` java 
+
+   
+```
+``` java 
+
+   
+```
+``` java 
+
+   
+```
+``` java 
+
+   
+```
+``` java 
+
+   
+```
+``` java 
+
+   
+```
+``` java 
+
+   
+```

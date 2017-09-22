@@ -12,8 +12,8 @@
 
 >>    `boolean contains(Object o)`
 
->>     ` boolean contains(Object o)` 
->   Returns <tt>true</tt> if this collection contains the specified element.
+>>    `boolean contains(Object o)` 
+>>     Returns <tt>true</tt> if this collection contains the specified element.
     
 
 ## Objects

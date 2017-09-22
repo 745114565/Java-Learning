@@ -6,13 +6,20 @@
 
 >   `Collection` 的重要方法如下：
 
->>    `int size()`
-   
->>    `boolean isEmpty()`
+>>   
+``` java 
+   int size()
+```
 
->>    `boolean contains(Object o)`
+``` java 
+   boolean isEmpty()
+``` 
 
->>    `boolean contains(Object o)` : Returns <tt>true</tt> if this collection contains the specified element.
+``` java 
+   boolean contains(Object o)
+``` 
+>>    _Returns <tt>true</tt> if this collection contains the specified element._
+      
 
 >>    `Iterator<E> iterator()` :   Returns an iterator over the elements in this collection.
 

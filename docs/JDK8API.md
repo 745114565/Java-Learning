@@ -22,3 +22,17 @@
 
 ## [Objects 类](jdk8/objects.md)
 
+>	`Objects` 是一个工具类，由一些有用的操作对象的方法组成，这些方法通常都是很有用的。例如判断 `user` 对象是否为空，`Objects.isNull(user)`等方法。 
+
+``` java
+	/**
+	 * This class consists of {@code static} utility methods for operating
+	 * on objects.  These utilities include {@code null}-safe or {@code
+	 * null}-tolerant methods for computing the hash code of an object,
+	 * returning a string for an object, and comparing two objects.
+	 *
+	 * @since 1.7
+	 */
+
+```
+[`Objects`的重要方法](jdk8/objects.md) 

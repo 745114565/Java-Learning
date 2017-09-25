@@ -22,7 +22,7 @@
 
 ## [Objects 类](jdk8/objects.md)
 
->	`Objects` 是一个工具类，由一些有用的操作对象的方法组成，这些方法通常都是很有用的。例如判断 `user` 对象是否为空，`Objects.isNull(user)`等方法。 
+>	`Objects` 是一个工具类，属于 `package java.util;` 包下，由一些有用的操作对象的方法组成，这些方法通常都是很有用的。例如判断 `user` 对象是否为空，`Objects.isNull(user)`等方法。 
 
 ``` java
 	/**
